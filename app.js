@@ -3,12 +3,17 @@ const cors = require('cors');
 require('dotenv').config();
 
 const usersRouter = require('./routes/users');
+const channelRouter = require('./routes/channels');
+const subscriptionsRouter = require('./routes/subscriptions');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use('/users', usersRouter); // Din första route
+app.use('/users', usersRouter); 
+app.use('/channels', channelRouter);
+app.use('/subscriptions', subscriptionsRouter);
+
 
 const PORT = process.env.PORT || 4000;
 const pool = require('./db');

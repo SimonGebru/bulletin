@@ -3,7 +3,6 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../db');
 
-// POST /users – skapa en ny användare
 router.post('/', async (req, res) => {
   const { username, email } = req.body;
 
