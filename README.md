@@ -11,6 +11,6 @@
 https://dbdiagram.io/d/682a27ff1227bdcb4eda22d1
 
 
-#Video länk:
+Video länk:
 https://drive.google.com/file/d/1n_NIq0nypz5RdkTlFjvNe9tR9Nu1vfKs/view?usp=sharing
 
