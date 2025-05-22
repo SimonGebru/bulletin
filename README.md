@@ -10,3 +10,7 @@
 # Om du föredrar att se hela datamodellen direkt i webbläsaren kan du även öppna ER-diagrammet på dbdiagram.io.
 https://dbdiagram.io/d/682a27ff1227bdcb4eda22d1
 
+
+#Video länk:
+https://drive.google.com/file/d/1n_NIq0nypz5RdkTlFjvNe9tR9Nu1vfKs/view?usp=sharing
+
