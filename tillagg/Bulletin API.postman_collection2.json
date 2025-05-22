@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "ed794f1e-dcc6-4ce4-b716-9e7c9a8a377d",
+		"name": "Bulletin API",
+		"description": "Endpoints för Bulletin-projektet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42813667"
+	},
+	"item": [
+		{
+			"name": "Skapa användare",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"testuser\",\n  \"email\": \"test@example.com\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hämta användare - endast för frontend",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/users/testuser",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"testuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Skapa kanal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Testkanal\",\n  \"ownerId\": 1\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/channels",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"channels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hämta alla kanaler",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/channels",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"channels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prenumerera på kanal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userId\": 1,\n  \"channelId\": 1\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/subscriptions",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"subscriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hämta prenumerationer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/subscriptions/1",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"subscriptions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Skicka meddelande",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"content\": \"Hej fr\\u00e5n Postman!\",\n  \"userId\": 1,\n  \"channelId\": 1\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/messages",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hämta meddelanden i kanal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/channels/1/messages",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"channels",
+						"1",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
