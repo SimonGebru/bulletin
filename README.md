@@ -5,6 +5,7 @@
 # I mappen Tillägg i vårt repo hittar du:
 	•	ER-diagram (skapad med dbdiagram.io) – tillgängligt som PDF
 	•	Exempelanrop – exporterade från vår Postman-collection
+ 	•	Vår SQL kod för testning av uppgiften
 
 # Om du föredrar att se hela datamodellen direkt i webbläsaren kan du även öppna ER-diagrammet på dbdiagram.io.
 https://dbdiagram.io/d/682a27ff1227bdcb4eda22d1
